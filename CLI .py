@@ -9,7 +9,6 @@ print("3.unit converter")
 print("4.simple system information")
 print("5.exit")
 
-
 choice = input("enter your task: ")
 
 while True:
@@ -100,27 +99,27 @@ while True:
 
     system_info = input("enter your type of info : ")
   
-  if system_info == "1":
+    if system_info == "1":
       computer_name = socket.gethostname()
       print(computer_name)
      
-  elif system_info =="2" : 
+    elif system_info =="2" : 
       python_version = platform.python_version()
       print(python_version)
-  elif system_info == "3" :
+    elif system_info == "3" :
      processor = platform.processor()
      print(processor)
      
-  elif system_info == "4" :  
+    elif system_info == "4" :  
      operating_system = platform.system()
      print(operating_system)
      
   elif choice == "5" :
-    print("Good bye!")
-  break
-else:
+     print("Good bye!")
+     break  
+
+  else:
    print("Invalid choice")
-   
 
 
    
